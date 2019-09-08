@@ -1,0 +1,44 @@
+@import '../../assets/scss/all';
+
+.catalog {
+    margin-top: $headerHeight + 60;
+    @include panel;
+
+    .pagination {
+        padding: 20px 0 5px 0;
+        justify-content: center;
+
+        .rc-pagination {
+            display: inline-block;
+
+            .rc-pagination-prev, .rc-pagination-next {
+                background: #ffffff;
+            }
+
+            .rc-pagination-item {
+                &:hover {
+                    border-color: $colorMain;
+
+                    a {
+                        color: $colorMain;
+                    }
+                }
+
+                &.rc-pagination-item-active {
+                    border-color: $colorMain;
+                    background: $colorMain;
+
+                    a {
+                        color: $colorLink;
+                    }
+                }
+            }
+
+            .rc-pagination-jump-next, .rc-pagination-jump-prev {
+                &:hover::after {
+                    color: $colorMain;
+                }
+            }
+        }
+    }
+}

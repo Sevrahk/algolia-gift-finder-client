@@ -1,0 +1,5 @@
+//catalog
+export const UPDATE_SEARCH = 'UPDATE_SEARCH';
+export const UPDATE_PRODUCTS = 'UPDATE_PRODUCTS';
+export const UPDATE_CURRENT_PAGE = 'UPDATE_CURRENT_PAGE';
+export const UPDATE_FILTER = 'UPDATE_FILTER';

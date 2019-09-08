@@ -1,0 +1,72 @@
+@import '../../assets/scss/all';
+
+.product {
+    margin-bottom: 20px;
+    color: $colorText;
+
+    article {
+        background: #ffffff;
+        padding: 10px;
+        box-shadow: 0 0 5px 0 rgba(#000000, 0.1);
+        position: relative;
+        overflow: hidden;
+
+        .productImg {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 90%;
+                max-height: 90%;
+            }
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .brand {
+            color: #999999;
+            font-size: 12px;
+        }
+
+        .freeShipping {
+            padding: 2px 20px 4px 20px;
+            background: #ff0000;
+            position: absolute;
+            bottom: 15px;
+            right: -24px;
+            z-index: 100;
+            color: $colorLink;
+            font-size: 9px;
+            transform: rotate(-45deg);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .description {
+            display: none;
+        }
+
+        .price {
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 16px;
+            color: $colorMain;
+            float: left;
+        }
+
+        .btn {
+            width: 100%;
+            border-radius: 0;
+            background: $colorMain;
+            color: $colorLink;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}

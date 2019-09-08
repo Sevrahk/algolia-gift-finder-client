@@ -1,0 +1,73 @@
+@import '../../assets/scss/all';
+
+.searchBar {
+    width: 100%;
+    padding: 10px 0;
+    background: $colorBackground;
+    position: fixed;
+    top: $headerHeight;
+    left: 0;
+    z-index: 50;
+    @include panel;
+
+    .inputContainer {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        input {
+            width: 100%;
+            padding: 7px 30px;
+            border: 1px solid #e9e9ec;
+            border-radius: 20px;
+            outline: 0;
+            box-shadow: 0 0 5px 0 rgba(#000000, 0.3);
+        }
+
+        svg {
+            position: absolute;
+            color: #999999;
+            transition: 0.2s;
+
+            &.fa-search {
+                top: 11px;
+                left: 10px;
+            }
+
+            &.fa-times {
+                top: 10px;
+                right: 13px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        .nbProducts {
+            margin-right: 10px;
+            float: right;
+            font-size: 12px;
+            color: $colorText;
+        }
+
+        .spellFix {
+            margin-left: 10px;
+            float: left;
+
+            span {
+                font-weight: bold;
+                color: $colorMain;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &.active {
+        .fa-search {
+            color: $colorMain;
+        }
+    }
+}

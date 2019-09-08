@@ -1,0 +1,43 @@
+@import '../../assets/scss/all';
+
+.sidebar {
+    width: $sidebarWidth;
+    height: 100%;
+    padding: $headerHeight + 10px 10px 30px 10px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: margin-left 0.2s ease-in-out;
+    overflow: scroll;
+    box-shadow: 0 0 28px 0 rgba(82, 63, 105, 0.13);
+
+    &.sidebarCollapsed {
+        margin-left: -$sidebarWidth;
+    }
+
+    @media (max-width: 767px) {
+        margin-left: -$sidebarWidth;
+        box-shadow: 0 1px 9px -3px rgba(0, 0, 0, 0.75);
+
+        &.sidebarSmallVisible {
+            margin-left: 0;
+        }
+    }
+
+    h6 {
+        margin: 5px 0;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    label {
+        padding-left: 5px;
+        user-select: none;
+
+        &.price input {
+            width: 50px;
+            display: inline-block;
+        }
+    }
+}

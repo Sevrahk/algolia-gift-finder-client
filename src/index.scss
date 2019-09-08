@@ -1,0 +1,8 @@
+@import 'assets/scss/all';
+
+body {
+    width: 100%;
+    padding-top: $headerHeight;
+    background: $colorBackground;
+    font: 14px 'Roboto', Arial;
+}

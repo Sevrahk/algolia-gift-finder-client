@@ -1,0 +1,14 @@
+@import 'variables';
+
+@mixin panel() {
+    padding-left: $sidebarWidth;
+    transition: .2s ease-in-out;
+
+    &.sidebarCollapsed {
+        padding-left: 0;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+    }
+}
